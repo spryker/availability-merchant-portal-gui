@@ -17,9 +17,6 @@ use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 
 class AvailabilityMerchantPortalGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\AvailabilityMerchantPortalGui\Communication\Expander\ProductConcreteTableExpanderInterface
-     */
     public function createProductConcreteTableExpander(): ProductConcreteTableExpanderInterface
     {
         return new ProductConcreteTableExpander(
@@ -29,25 +26,16 @@ class AvailabilityMerchantPortalGuiCommunicationFactory extends AbstractCommunic
         );
     }
 
-    /**
-     * @return \Spryker\Zed\AvailabilityMerchantPortalGui\Dependency\Facade\AvailabilityMerchantPortalGuiToAvailabilityFacadeInterface
-     */
     public function getAvailabilityFacade(): AvailabilityMerchantPortalGuiToAvailabilityFacadeInterface
     {
         return $this->getProvidedDependency(AvailabilityMerchantPortalGuiDependencyProvider::FACADE_AVAILABILITY);
     }
 
-    /**
-     * @return \Spryker\Zed\AvailabilityMerchantPortalGui\Dependency\Facade\AvailabilityMerchantPortalGuiToMerchantUserFacadeInterface
-     */
     public function getMerchantUserFacade(): AvailabilityMerchantPortalGuiToMerchantUserFacadeInterface
     {
         return $this->getProvidedDependency(AvailabilityMerchantPortalGuiDependencyProvider::FACADE_MERCHANT_USER);
     }
 
-    /**
-     * @return \Spryker\Zed\AvailabilityMerchantPortalGui\Dependency\Facade\AvailabilityMerchantPortalGuiToMerchantStockFacadeInterface
-     */
     public function getMerchantStockFacade(): AvailabilityMerchantPortalGuiToMerchantStockFacadeInterface
     {
         return $this->getProvidedDependency(AvailabilityMerchantPortalGuiDependencyProvider::FACADE_MERCHANT_STOCK);

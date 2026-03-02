@@ -25,11 +25,6 @@ class AvailabilityMerchantPortalGuiToAvailabilityFacadeBridge implements Availab
         $this->availabilityFacade = $availabilityFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductAvailabilityCriteriaTransfer $productAvailabilityCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductConcreteAvailabilityCollectionTransfer
-     */
     public function getProductConcreteAvailabilityCollection(
         ProductAvailabilityCriteriaTransfer $productAvailabilityCriteriaTransfer
     ): ProductConcreteAvailabilityCollectionTransfer {

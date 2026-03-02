@@ -12,11 +12,6 @@ use Generated\Shared\Transfer\ProductConcreteAvailabilityCollectionTransfer;
 
 interface AvailabilityMerchantPortalGuiToAvailabilityFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ProductAvailabilityCriteriaTransfer $productAvailabilityCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductConcreteAvailabilityCollectionTransfer
-     */
     public function getProductConcreteAvailabilityCollection(
         ProductAvailabilityCriteriaTransfer $productAvailabilityCriteriaTransfer
     ): ProductConcreteAvailabilityCollectionTransfer;
